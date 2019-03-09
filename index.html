@@ -1,26 +1,83 @@
+<!-- 
+  All right, whoever is looking at the source, I'll leave comments to explain wtf is going on. 
+
+  philosophy: 
+  Commenting/Documentation is like sex.
+  When it's good, it's very good.
+  when it's bad, it's better than nothing ...
+
+
+  I personally felt like the instructor did a poor job of explaining the concept (BUT! you looking at my source shows you are willing to learn and are interested of HOW and WHY it works. I leave around easter eggs everywhere muaahahahahaha find them all ;), but If you haven't gotten by now the parent-children concept, think of it as russian nesting dolls.. 
+  ex:
+  <parent>
+    <child 0>
+      content
+      <child 1>  <-|
+        content    |---the parent is "child 0"
+      </child 1> <-|
+    </child 0>
+  </parent>
+    
+  Now apply that for grid with 3 columns:
+  <container> <---parent. Without it, row wouldn't look badass because it's programmed that way. 
+
+    <row>  <----- child. You can have AS MANY rows as you want. Go nuts w/ it
+
+      <column> <--sub-child 0
+        content
+      </column>
+
+      <column> <--sub-child 1
+        content
+      </column>
+
+      <column> <--sub-child 2
+        content
+      </column>
+
+    </row>
+
+  </container>
+          **IF STILL NOT SURE ABOUT PARENT-CHILD, add class of "border", and you'll see the borders around**
+
+    DON'T BE AFRAID TO EXPERIMENT. PROGRAMMING IS NOT SOME MYTHICAL THING, PEOPLE WROTE IT. THERE ARE MANUALS/DOCUMENTATION/YOUTUBE VIDEOS IF YOU HAVE QUESTIONS EXPLAINING HOW TO/WHY/WHEN TO. 
+
+    IT WON'T BITE YOUR FINGERS OR BREAK YOUR COMPUTER. ONE ADVISE I CAN GIVE IS DONT BE AFRAID TO FAIL. FAIL HARD, SO YOU CAN LEARN FROM IT AND MAKE THE NEXT ATTEMPT BETTER. YOU'LL HAVE A DAY WHEN YOU CLIMB OVER THE WALL OF "ITS HARD" AND YOU'LL BE LIKE "WOAH DUUDE"
+
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- this is a dirty way of doing it, but it sure beats downloading bootstrap source and using SASS for a quick and simple project -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
         />
-        <link rel="stylesheet" href="./assets/css/style.css" />
 
-        <title>Ashell Fernando Portfolio</title>
+        <title>Ashell Fernando- Portfolio::Home</title>
+        <script>
+            console.log('lol');
+        </script>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <!-- push-right adds margin to the LEFT. Ex: {border}push-right->->CONTENT -->
             <div class="push-right">
                 <h1 class="nav navbar-brand">Ashell Fernando</h1>
             </div>
+            <!-- <a> is child of <li>, which is child of <ul>, so we push the whole <ul> by ml-auto, which is auto-margin in FLEX  -->
             <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item">
+                    <!-- bubble-sides adds a "bubble" to either side -->
                     <a class="nav-link active text-light" href="./index.html"
-                        >About <span class="bubble-side">|</span></a
+                        >About <span class="bubble-sides">|</span></a
                     >
                 </li>
 
@@ -36,13 +93,43 @@
                 </li>
             </ul>
         </nav>
+        <!-- What push-down does is, it creates margin on bottom of the empty div -->
         <div class="push-down"></div>
-        <div class="container">
+        <div class="container border">
             <div class="row">
+                <div class="col-md-12">
+                    About Me
+                    <hr />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">Portfolio image goes here</div>
                 <div class="col-md">
-                    1
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Natus quae nobis ipsam enim eligendi odit, harum nostrum
+                    quos delectus necessitatibus, saepe itaque dolore molestiae
+                    labore ab commodi iste expedita? Architecto.
                 </div>
             </div>
         </div>
+
+        <footer class="footer fixed-bottom bg-info ">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-auto">
+                        <span>
+                            Ashell Fernando <span class="text-danger">&copy;</span> 2019
+                        </span>
+                        <div class="row">
+                            <div class="col-md-4">1</div>
+                            <div class="col-md-4">2</div>
+                            <div class="col-md-4">3</div>
+                        </div>
+                    </div>
+                   
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
