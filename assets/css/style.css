@@ -35,3 +35,16 @@
     padding: 0 1rem 1rem 0;
     border-radius: 20px;
 }
+
+#GWG-image,
+#WbW1-img {
+    height: 400px;
+    border-radius: 20px;
+}
+
+/* Text */
+
+div h6 {
+    font-size: 0.7rem;
+    text-align: center;
+}

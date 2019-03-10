@@ -89,7 +89,7 @@
     </head>
     <body>
         <!-- Navbar -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
             <!-- push-right adds margin to the LEFT. Ex: {border}push-right->->CONTENT -->
             <div class="push-right">
                 <h1 class="nav navbar-brand">Ashell Fernando</h1>
@@ -97,19 +97,19 @@
             <!-- <a> is child of <li>, which is child of <ul>, so we push the whole <ul> by ml-auto, which is auto-margin in FLEX  -->
             <ul class="nav navbar-nav ml-auto ">
                 <li class="nav-item">
-                    <a class="nav-link active text-light" href="./index.html"
+                    <a class="nav-link active text-muted" href="./index.html"
                         >About</a
                     >
                 </li>
 
                 <li class="nav-item border-right border-left">
-                    <a class="nav-link text-light " href="./portfolio.html">
+                    <a class="nav-link text-muted " href="./portfolio.html">
                         Portfolio
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link text-light " href="./contact.html">
+                    <a class="nav-link text-muted " href="./contact.html">
                         Contact</a
                     >
                 </li>
@@ -120,23 +120,81 @@
         <div class="container border">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>About Me</h1>
+                    <h1 class="my-3">About Me</h1>
+
                     <hr />
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-2 img-fluid">
-                    <img
-                        src="https://entofmd.github.io/Basic-Portfolio/assets/images/portrait.png"
-                        alt="Ashell Fernando's Portrait"
-                        id="img-portrait"
-                    />
+                    <figure>
+                        <img
+                            src="https://entofmd.github.io/Basic-Portfolio/assets/images/portrait.png"
+                            alt="Ashell Fernando's Portrait"
+                            id="img-portrait"
+                        />
+                    </figure>
+                    <h6 class="text-muted">
+                        <figcaption>
+                            "I went to the beach and found
+                            <abbr title="ASHELL aka zer0">A SHELL</abbr>"
+                        </figcaption>
+                    </h6>
                 </div>
                 <div class="col-md">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Natus quae nobis ipsam enim eligendi odit, harum nostrum
-                    quos delectus necessitatibus, saepe itaque dolore molestiae
-                    labore ab commodi iste expedita? Architecto.
+                    <p>
+                        Friends call me Ash. Started coding when I was in high
+                        school circa 2008. First developed C++ applications,
+                        then moved to Java, then to C#, then finally before a
+                        hiatus, LAMP-stack. Developed and managed websites and
+                        databases for a gaming community, which developed
+                        "private servers" of actual games (they ripped the game
+                        files, and used Apache to host and LogMeIn's service to
+                        connect to others.) Then my health field career started.
+                        I was a Pharmacy Technician from 2015, with no
+                        experience but with determination, became a nationally
+                        certified after a year (most people pay for classes at
+                        local college to prepare for the examination).
+                    </p>
+                    <p>
+                        Being a Pharmacy Technician for 4 years changed my life.
+                        It was the catalyst I needed to speedup my goals for the
+                        future. With grit and perseverance, I studied and
+                        studied hard for 2 years on fundamentals of MERN stack.
+                        Through that time, I gained insight in the life of a
+                        developer, a corporate employee, and a leader.
+                    </p>
+<p>
+                    In March of 2018, I was lucky to get into Google/Udacity
+                    scholarship program, "Grow With Google"
+                    <div class="row">
+                        <div class="col-md-auto">
+                            <img
+                                src="./assets/img/GWG.PNG"
+                                alt="Grow With Google image"
+                                id="GWG-image"
+                            />
+                        </div>
+                    </div>
+</p>
+                    I want to thank my managers for letting me study while
+                    working.
+                    <div class="row">
+                        <div class="col-md-auto">
+                            <img
+                                src="./assets/img/work_1.JPG"
+                                alt="Working before work image"
+                                id="WbW1-img"
+                            />
+                        </div>
+                        <div class="col-md-auto">
+                            <img
+                                src="./assets/img/work_2.JPG"
+                                alt="Working before work image"
+                                id="WbW1-img"
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
