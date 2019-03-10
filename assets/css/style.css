@@ -1,3 +1,11 @@
+/* Navbar Section */
+
+/* !important supersede bootstrap's "block" display */
+.nav-link {
+    display: inline !important;
+}
+
+/* General padding & margins */
 .push-right {
     margin-left: 10%;
 }
@@ -8,4 +16,22 @@
 
 .bubble-sides {
     margin: 0 5px;
+}
+
+.border-side {
+    border-left: solid 1px #fff;
+    border-right: solid 1px #fff;
+}
+
+.border-left {
+    height: 20px;
+}
+
+/* Images */
+#img-portrait {
+    height: 200px;
+    overflow: hidden;
+    padding: 0 1rem 1rem 0;
+    padding: 0 1rem 1rem 0;
+    border-radius: 20px;
 }
