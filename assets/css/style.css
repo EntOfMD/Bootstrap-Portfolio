@@ -51,9 +51,17 @@
     border-radius: 20px;
 }
 
+.img-portfolio {
+    height: 200px !important;
+}
+
 /* Text */
 
 div h6 {
     font-size: 0.7rem;
     text-align: center;
+}
+
+.overlay-text {
+    margin-top: 2rem;
 }
