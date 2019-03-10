@@ -5,6 +5,15 @@
     display: inline !important;
 }
 
+#brand-name {
+    padding: 0 25px 0 0;
+    margin-left: 8vh;
+}
+
+.navbar-brand {
+    font-size: 2rem !important;
+}
+
 /* General padding & margins */
 .push-right {
     margin-left: 10%;

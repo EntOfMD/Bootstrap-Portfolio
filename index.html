@@ -91,8 +91,10 @@
         <!-- Navbar -->
         <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
             <!-- push-right adds margin to the LEFT. Ex: {border}push-right->->CONTENT -->
-            <div class="push-right">
-                <h1 class="nav navbar-brand">Ashell Fernando</h1>
+            <div class="bg-info" id="brand-name">
+                <div class="push-right">
+                    <h1 class="nav navbar-brand text-dark">Ashell Fernando</h1>
+                </div>
             </div>
             <!-- <a> is child of <li>, which is child of <ul>, so we push the whole <ul> by ml-auto, which is auto-margin in FLEX  -->
             <ul class="nav navbar-nav ml-auto ">
@@ -140,7 +142,7 @@
                         </figcaption>
                     </h6>
                 </div>
-                <div class="col-md">
+                <div class="col-lg">
                     <p>
                         Friends call me Ash. Started coding when I was in high
                         school circa 2008. First developed C++ applications,
@@ -197,53 +199,18 @@
                             />
                         </div>
                     </div>
+                    <div class="push-down"></div>
                 </div>
             </div>
         </div>
         <!-- if you add "fixed-bottom", bootstrap will sticky whatever element to the bottom. Look at <nav> to see "fixed-top" -->
-        <footer class="footer fixed-bottom bg-info  ">
+        <div class="push-down"></div>
+        <footer class="footer bg-info">
+            <div class="pt-1 bg-dark"></div>
             <div class="container">
-                <div class="row justify-content-center">
+                <div class="row justify-content-center pt-2 pb-2">
                     <div class="col-md-auto ml-center">
-                        <span>
-                            Ashell Fernando
-                            <span class="text-warning">&copy;</span> 2019
-                        </span>
-                        <div class="row">
-                            <div class="col-md-auto ">
-                                <a
-                                    href="https://github.com/EntOfMD/pixl"
-                                    target="_blank"
-                                    ><abbr
-                                        class="text-muted"
-                                        title="PiXL - Unsplash MERN RESTful app"
-                                        >PiXL Image Search App</abbr
-                                    ></a
-                                >
-                            </div>
-                            <div class="col-md-auto">
-                                <a
-                                    href="https://github.com/EntOfMD/APItube"
-                                    target="_blank"
-                                    ><abbr
-                                        class="text-muted"
-                                        title="APItube - YouTube MERN-stack RESTful app"
-                                        >APItube App</abbr
-                                    ></a
-                                >
-                            </div>
-                            <div class="col-md-auto">
-                                <a
-                                    href="https://spacex-launches-and-info.herokuapp.com/"
-                                    target="_blank"
-                                    ><abbr
-                                        class="text-muted"
-                                        title="SpaceX's Launches and Rocket Info RESTful app React+GraphQL+Apollo"
-                                        >SpaceX App</abbr
-                                    ></a
-                                >
-                            </div>
-                        </div>
+                        Ashell Fernando &copy; 2019
                     </div>
                 </div>
             </div>
