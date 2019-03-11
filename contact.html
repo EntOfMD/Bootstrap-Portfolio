@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- this is a dirty way of doing it, but it sure beats downloading bootstrap source and using SASS for a quick and simple project -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/clock.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    <script src="./assets/js/snowflake.js"></script>
 
     <title>Ashell's Portfolio ::Contact</title>
   </head>
@@ -19,9 +21,13 @@
       <!-- push-right adds margin to the LEFT. Ex: {border}push-right->->CONTENT -->
       <div class="bg-info" id="brand-name">
         <div class="push-right">
-          <h1 class="nav navbar-brand text-dark">Ashell Fernando</h1>
+          <h1 class="nav navbar-brand text-dark">
+            Ashell Fernando
+          </h1>
         </div>
       </div>
+      <div id="time" style="margin-left:10px"></div>
+      <div id="date" style="margin-left:10px"></div>
       <!-- <a> is child of <li>, which is child of <ul>, so we push the whole <ul> by ml-auto, which is auto-margin in FLEX  -->
       <ul class="nav navbar-nav ml-auto ">
         <li class="nav-item">
@@ -72,15 +78,16 @@
                 cols="3"
                 rows="3"
                 class="form-control"
+                placeholder="Type the message here"
               ></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
       </div>
-
       <div class="push-down"></div>
     </div>
+    <canvas></canvas>
 
     <!-- if you add "fixed-bottom", bootstrap will sticky whatever element to the bottom. Look at <nav> to see "fixed-top" -->
     <div class="push-down"></div>
