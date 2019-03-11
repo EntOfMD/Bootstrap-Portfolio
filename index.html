@@ -49,21 +49,21 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <!-- this is a dirty way of doing it, but it sure beats downloading bootstrap source and using SASS for a quick and simple project -->
-        <link rel="stylesheet" href="./assets/css/style.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
-        />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- this is a dirty way of doing it, but it sure beats downloading bootstrap source and using SASS for a quick and simple project -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+    />
 
-        <title>Ashell's Portfolio ::Home</title>
-        <script>
-            console.log(
-                `%c
+    <title>Ashell's Portfolio ::Home</title>
+    <script>
+      console.log(
+        `%c
             
                      ¶¶¶¶¶¶¶¶¶¶¶¶ 
                   ¶¶            ¶¶ 
@@ -83,137 +83,129 @@
   ¶¶¶¶¶¶¶¶¶¶¶¶      ¶¶            ¶¶
                        ¶¶¶¶¶¶¶¶¶¶¶
             `,
-                'font-family:monospace'
-            );
-        </script>
-    </head>
-    <body>
-        <!-- Navbar -->
-        <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
-            <!-- push-right adds margin to the LEFT. Ex: {border}push-right->->CONTENT -->
-            <div class="bg-info" id="brand-name">
-                <div class="push-right">
-                    <h1 class="nav navbar-brand text-dark">Ashell Fernando</h1>
-                </div>
-            </div>
-            <!-- <a> is child of <li>, which is child of <ul>, so we push the whole <ul> by ml-auto, which is auto-margin in FLEX  -->
-            <ul class="nav navbar-nav ml-auto ">
-                <li class="nav-item">
-                    <a class="nav-link active text-muted" href="./index.html"
-                        >About</a
-                    >
-                </li>
-
-                <li class="nav-item border-right border-left">
-                    <a class="nav-link text-muted " href="./portfolio.html">
-                        Portfolio
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link text-muted " href="./contact.html">
-                        Contact</a
-                    >
-                </li>
-            </ul>
-        </nav>
-        <!-- What push-down does is, it creates margin on bottom of the empty div -->
-        <div class="push-down"></div>
-        <div class="container border">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="my-3">About Me</h1>
-                    <hr />
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 img-fluid">
-                    <figure>
-                        <img
-                            src="https://entofmd.github.io/Basic-Portfolio/assets/images/portrait.png"
-                            alt="Ashell Fernando's Portrait"
-                            id="img-portrait"
-                        />
-                    </figure>
-                    <h6 class="text-muted">
-                        <figcaption>
-                            "I went to the beach and found
-                            <abbr title="ASHELL aka zer0">A SHELL</abbr>"
-                        </figcaption>
-                    </h6>
-                </div>
-                <div class="col-lg">
-                    <p>
-                        Friends call me Ash. Started coding when I was in high
-                        school circa 2008. First developed C++ applications,
-                        then moved to Java, then to C#, then finally before a
-                        hiatus, LAMP-stack. Developed and managed websites and
-                        databases for a gaming community, which developed
-                        "private servers" of actual games (they ripped the game
-                        files, and used Apache to host and LogMeIn's service to
-                        connect to others.) Then my health field career started.
-                        I was a Pharmacy Technician from 2015, with no
-                        experience but with determination, became a nationally
-                        certified after a year (most people pay for classes at
-                        local college to prepare for the examination).
-                    </p>
-                    <p>
-                        Being a Pharmacy Technician for 4 years changed my life.
-                        It was the catalyst I needed to speedup my goals for the
-                        future. With grit and perseverance, I studied and
-                        studied <em>hard</em> for 2 years on fundamentals of
-                        MERN stack and fundamentals of javascript. Through that
-                        time, I gained insight in the life of a developer, a
-                        corporate employee, and a leader.
-                    </p>
-                    <p>
-                        In March of 2018, I was lucky to get into Google/Udacity
-                        scholarship program, "Grow With Google"
-                    </p>
-
-                    <div class="row">
-                        <div class="col-md-auto">
-                            <img
-                                src="./assets/img/GWG.PNG"
-                                alt="Grow With Google image"
-                                id="GWG-image"
-                            />
-                        </div>
-                    </div>
-
-                    I want to thank my managers for letting me study while
-                    working.
-                    <div class="row">
-                        <div class="col-md-auto">
-                            <img
-                                src="./assets/img/work_1.JPG"
-                                alt="Working before work image"
-                                id="WbW1-img"
-                            />
-                        </div>
-                        <div class="col-md-auto">
-                            <img
-                                src="./assets/img/work_2.JPG"
-                                alt="Working before work image"
-                                id="WbW1-img"
-                            />
-                        </div>
-                    </div>
-                    <div class="push-down"></div>
-                </div>
-            </div>
+        "font-family:monospace"
+      );
+    </script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
+      <!-- push-right adds margin to the LEFT. Ex: {border}push-right->->CONTENT -->
+      <div class="bg-info" id="brand-name">
+        <div class="push-right">
+          <h1 class="nav navbar-brand text-dark">Ashell Fernando</h1>
         </div>
-        <!-- if you add "fixed-bottom", bootstrap will sticky whatever element to the bottom. Look at <nav> to see "fixed-top" -->
-        <div class="push-down"></div>
-        <footer class="footer bg-info">
-            <div class="pt-1 bg-dark"></div>
-            <div class="container">
-                <div class="row justify-content-center pt-2 pb-2">
-                    <div class="col-md-auto ml-center">
-                        Ashell Fernando &copy; 2019
-                    </div>
-                </div>
+      </div>
+      <!-- <a> is child of <li>, which is child of <ul>, so we push the whole <ul> by ml-auto, which is auto-margin in FLEX  -->
+      <ul class="nav navbar-nav ml-auto ">
+        <li class="nav-item">
+          <a class="nav-link active text-muted" href="./index.html">About</a>
+        </li>
+
+        <li class="nav-item border-right border-left">
+          <a class="nav-link text-muted " href="./portfolio.html">
+            Portfolio
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-muted " href="./contact.html"> Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- What push-down does is, it creates margin on bottom of the empty div -->
+    <div class="push-down"></div>
+    <div class="container border">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="my-3">About Me</h1>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 img-fluid">
+          <figure>
+            <img
+              src="https://entofmd.github.io/Basic-Portfolio/assets/images/portrait.png"
+              alt="Ashell Fernando's Portrait"
+              id="img-portrait"
+            />
+          </figure>
+          <h6 class="text-muted">
+            <figcaption>
+              "I went to the beach and found
+              <abbr title="ASHELL aka zer0">A SHELL</abbr>"
+            </figcaption>
+          </h6>
+        </div>
+        <div class="col-lg">
+          <p>
+            Friends call me Ash. Started coding when I was in high school circa
+            2008. First developed C++ applications, then moved to Java, then to
+            C#, then finally before a hiatus, LAMP-stack. Developed and managed
+            websites and databases for a gaming community, which developed
+            "private servers" of actual games (they ripped the game files, and
+            used Apache to host and LogMeIn's service to connect to others.)
+            Then my health field career started. I was a Pharmacy Technician
+            from 2015, with no experience but with determination, became a
+            nationally certified after a year (most people pay for classes at
+            local college to prepare for the examination).
+          </p>
+          <p>
+            Being a Pharmacy Technician for 4 years changed my life. It was the
+            catalyst I needed to speedup my goals for the future. With grit and
+            perseverance, I studied and studied <em>hard</em> for 2 years on
+            fundamentals of MERN stack and fundamentals of javascript. Through
+            that time, I gained insight in the life of a developer, a corporate
+            employee, and a leader.
+          </p>
+          <p>
+            In March of 2018, I was lucky to get into Google/Udacity scholarship
+            program, "Grow With Google"
+          </p>
+
+          <div class="row">
+            <div class="col-md-auto">
+              <img
+                src="./assets/img/GWG.PNG"
+                alt="Grow With Google image"
+                id="GWG-image"
+              />
             </div>
-        </footer>
-    </body>
+          </div>
+
+          I want to thank my managers for letting me study while working.
+          <div class="row">
+            <div class="col-md-auto">
+              <img
+                src="./assets/img/work_1.JPG"
+                alt="Working before work image"
+                id="WbW1-img"
+              />
+            </div>
+            <div class="col-md-auto">
+              <img
+                src="./assets/img/work_2.JPG"
+                alt="Working before work image"
+                id="WbW1-img"
+              />
+            </div>
+          </div>
+          <div class="push-down"></div>
+        </div>
+      </div>
+    </div>
+    <!-- if you add "fixed-bottom", bootstrap will sticky whatever element to the bottom. Look at <nav> to see "fixed-top" -->
+    <div class="push-down"></div>
+    <footer class="footer bg-info">
+      <div class="pt-1 bg-dark"></div>
+      <div class="container">
+        <div class="row justify-content-center pt-2 pb-2">
+          <div class="col-md-auto ml-center">
+            Ashell Fernando &copy; 2019
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
