@@ -16,6 +16,7 @@ html,
 body {
   background-image: url("../img/background.png");
   height: 100%;
+  padding-top: 15px;
 }
 .container {
   background-color: var(--main-content-bg-color) !important;
