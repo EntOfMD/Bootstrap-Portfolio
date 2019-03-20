@@ -28,4 +28,14 @@
 .gallery-image {
     margin: 1% auto;
     border-radius: 10px;
+    height: 300px;
+    width: 100%;
+}
+
+.github {
+    height: 20px;
+}
+
+.card-link {
+    text-decoration: none;
 }
